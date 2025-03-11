@@ -12,7 +12,7 @@ const useSendMessage = (): object => {
     //   const success = handleErrors(content);
     //   if (!success) return;
 
-      await axios.post(`/api/message/send/${selectedChat._id}`, {
+      await axios.post(`https://chat-bn.onrender.com/api/message/send/${selectedChat._id}`, {
           content,
         })
         .then((response) => {

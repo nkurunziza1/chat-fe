@@ -40,7 +40,7 @@ const useSignUp = (): object => {
 
     try {
       axios
-        .post("/api/auth/signup", {
+        .post("https://chat-bn.onrender.com/api/auth/signup", {
           fullName,
           username,
           email,

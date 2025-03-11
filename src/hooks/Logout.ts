@@ -15,7 +15,7 @@ const useLogout = (): object => {
 
     try {
       axios
-        .post("/api/auth/logout")
+        .post("https://chat-bn.onrender.com/api/auth/logout")
         .then((response) => {
           const data = response.data;
           console.log({ data });

@@ -11,7 +11,7 @@ const useGetChat = (): object => {
       setLoading(true);
       try {
         await axios
-          .get("/api/user")
+          .get("https://chat-bn.onrender.com/api/user")
           .then((response) => {
             // console.log(response.data);
             const data = response.data.allUsers;

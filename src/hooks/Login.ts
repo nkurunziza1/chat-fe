@@ -28,7 +28,7 @@ const useLogin = (): object => {
 
     try {
       axios
-        .post("/api/auth/login", {
+        .post("https://chat-bn.onrender.com/api/auth/login", {
           email,
           password,
         })

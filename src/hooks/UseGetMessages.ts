@@ -9,7 +9,7 @@ const UseGetMessages = ():object => {
     useEffect(() => {
      const getMessage = async()=>{
       try {
-        await axios.get(`/api/message/get/${selectedChat._id}`)
+        await axios.get(`https://chat-bn.onrender.com/api/message/get/${selectedChat._id}`)
         .then((response)=>{
            const data = response.data
             console.log(response);
